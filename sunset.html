@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+      <style>
+          body{
+            background-color: #a0d0d1;
+              padding: 0px;
+              margin:  0px;
+              overflow: hidden;
+              -webkit-animation: sky 8s linear forwards;
+          }
+          @-webkit-keyframes sky{
+              0%{
+                  background-color:#a0d0d1;
+              }
+              50%{background-color: #fff9a3;}
+              70%{background-color: #cb839;}
+              100%{background-color: #57416d;}
+          }
+          .waterwave{
+            //position:absolute;
+           // left:50px;
+            //  right: 100px;
+              top:600px;
+              height:200px;
+              width: 100%;
+            // background-size: 40px, 80px;
+            // -webkit-background-repeat: repreat;
+             -webkit-animation: water 20s infinite linear;
+             //-webkit-animation-duration: 10s;
+             //-webkit-animation-direction: linear forward;
+           position: absolute;
+           width:100%;
+           background-color: blue;
+           -webkit-border-radius: 50%;
+           
+           //-webkit-transform: rotate(-180deg);
+          }
+          @-webkit-keyframes water{
+              from{-webkit-transform:traslate(0px); }
+              to{-webkit-transform: translateY(2000px);
+              }
+              from{left:0px;}
+              to{left:2000px;}
+          }
+          
+          .wave{
+              position: absolute;
+              content: "";
+              background-color: blue;
+              height:200px;
+              width:80%;
+              top:600px;
+               -webkit-border-radius: 50%;
+              opacity: 0.5;
+               -webkit-animation: wat 20s infinite linear;
+          }
+           @-webkit-keyframes wat{
+              from{-webkit-transform:traslateY(2000px); }
+              to{-webkit-transform: translateY(0px);
+              }
+              from{left:2000px;}
+              to{left:0px;}
+              from{background-position: 2000px;}
+              to{background-position: 0px}
+          }
+          .sand{
+              background-color: yellow;
+              height:78px;
+              width: 550px;
+              position: absolute;
+              bottom: 0px;
+              -webkit-border-radius: 0 100% 0 0;
+          }
+          .tree{
+              height: 700px;
+              width: 500px;
+              position: absolute;
+              border: 5px solid transparent;
+              border-right: 50px solid orangered;
+              bottom:-80px;
+              border-radius: 50%;
+              
+              -webkit-transform: rotate(50deg);
+              left:-200px;
+              z-index: -1;
+          }
+          .tree>div:nth-child(1){
+              height:120px;
+              width: 150px; 
+          position: absolute;
+          right: 115px;
+          top:-25px;
+         // background-color: yellowgreen;
+          border-radius: 50%;
+          border-top: 40px solid yellowgreen;
+         -webkit-transform: rotate(-10deg);
+          
+          }
+         .tree>div:nth-child(2){
+              height:170px;
+              width: 150px; 
+          position: absolute;
+          //right: 775px;
+          //background-color: red;
+          border-radius: 50%;
+          border-top: 40px solid yellowgreen;
+          -webkit-transform: rotate(-15deg);
+          right:-35px;
+          top:-70px;
+          //transform: rotate(-65deg);
+          //border-radius: 50%;
+          }
+          .tree>div:nth-child(3){
+              height:130px;
+              width: 120px; 
+          position: absolute;
+          right: 20px;
+          //background-color: black;
+          border-radius: 50%;
+          border-top: 40px solid yellowgreen;
+         -webkit-transform: rotate(-120deg);
+          }
+          .tree>div:nth-child(4){
+              height:80px;
+              width: 150px; 
+          position: absolute;
+          right: 80px;
+           top:35px;
+          //background-color:yellow;
+          border-radius: 120% 120% 0% 0%;
+          border-top: 40px solid yellowgreen;
+          -webkit-transform: rotate(-45deg);
+         
+          }
+          .tree>div:nth-child(5){
+              height:145px;
+              width: 90px; 
+          position: absolute;
+          top:-40px;
+          right: 99px;
+          //background-color:black;
+          border-radius: 50%;
+         border-top: 40px solid yellowgreen;
+          -webkit-transform: rotate(10deg);
+          }
+          .tree>div:nth-child(6){
+              height:220px;
+              width: 130px; 
+          position: absolute;
+          right: 60px;
+          top:-40px;
+          //background-color: yellow;
+          border-radius: 50%;
+          border-top: 40px solid yellowgreen;
+          -webkit-transform: rotate(60deg);
+          
+          }
+          .sun{
+              background-color:orange;
+              height: 120px;
+              width: 120px;
+              border-radius: 50%;
+              position: absolute;
+              margin: auto;
+              left: 0px;
+              right: 0px;
+              top: 300px;
+              z-index: -2;
+             -webkit-animation-name:  sunset;
+             -webkit-animation-duration: 15s;
+             -webkit-animation-direction: linear forward;
+              
+          }
+          @-webkit-keyframes sunset{
+              0%{top:300px;}
+              100%{top:800px;}
+          }
+      </style>
+    </head>
+    <body>
+         <div class="wave"></div>
+        <div class="waterwave"></div>
+        
+        <div class="sand"></div>
+       
+        <div class="tree">
+        <div></div>
+          <div></div>
+            <div></div>
+              <div></div>
+                <div></div>
+                <div></div></div>
+                  <div class="sun"></div>
+    </body>
+</html>
