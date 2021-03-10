@@ -16,7 +16,7 @@ public class matrixmultiplication {
         q=s.nextInt();
         if(n!=p)
         {
-            System.out.println("Matrix with thw given order cannot be multiplied with each other.");
+            System.out.println("Matrix with the given order cannot be multiplied with each other.");
         }
         else{
             System.out.println("Enter the elements of first matrix:");
