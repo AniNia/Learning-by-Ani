@@ -1,0 +1,350 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	
+}
+a:hover{
+	text-decoration: none;
+	
+}
+li{
+	list-style: none;
+}
+p{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color:#606060; 
+}
+extradiv h2{
+	font-size: 0.9rem;margin: 20px 0 15px 0;font-weight: bold;line-height: 1.1;word-spacing: 4px;
+	
+}
+.wave{
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.header{
+	
+	width: 100%;
+	height: 65vh;
+	background-image:linear-gradient(rgba(247, 115, 8, 0.1), rgb(245, 160, 2)), url('../aero.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	
+	
+}
+.header:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0;
+	right: 0;
+	opacity:.3;
+	z-index:-1;
+	background:orangered;
+
+}
+.navbar:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0;
+	right: 0;
+	opacity:.9;
+	z-index:-1;
+	background:orange;
+	margin-bottom:5px;
+	
+	
+}
+.nav-item a{	
+	padding:12px 2px 12px 2px;
+	outline: none;
+	color: #fff;
+	font-size:1.2rem!important;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.show,
+.navbar .navbar-nav .show>.nav-link {
+	color:white;
+	margin: auto;
+	border-bottom: 2px solid white;
+}
+nav a{
+	text-transform: uppercase;
+	padding-bottom: 5px!important;
+	color:yellow;
+	font-size:1.3rem!important;
+    margin-left: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+}
+.header-section{
+	width: 100%;
+	height: inherit;
+	color:black;
+	text-align:center;
+	position: relative;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+	
+}
+.center-div{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.header-buttons a{
+	border: 1px solid #fff;
+	border-radius:100px;
+	margin: 3px 10px;
+	padding: 12px 35px;
+	outline: none;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+	
+}
+.header-buttons a:hover {
+	color: orange;
+	background: #fff;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	font-weight: bold;
+    border: orangered;
+}
+.center-div p{
+	font-weight: bold;
+	padding:10px 0 20px 0;
+	color: white;
+	
+}
+
+
+.ic{
+	width: 400px;
+}
+
+
+
+.serviceoffer{
+	width: 100%;
+	height: 100%;
+	
+	position: relative;
+	
+	
+}
+.serviceoffer:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0;
+	right: 0;
+	z-index:-1;
+    
+	
+	
+}
+.card{
+	transition:0.4s ease;
+	margin-top: 2px;
+	margin-bottom: 35px;
+	
+}
+.card:hover{
+    
+	transform:translateY(-20px);
+
+}
+.s-buttons{
+	margin-top: 50px;
+}
+.s-buttons a{
+	border: 1px solid orangered;
+	border-radius:100px;
+	margin: 0px 0px;
+	padding: 12px 35px;
+	outline: none;
+	color: orange;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+	
+	
+}
+.card:hover .s-buttons a {
+	text-decoration: none;
+	color:orangered;
+	background:orange;
+	box-shadow: 0 0 10px 0 rgb(248, 92, 2);
+	font-weight: bold;
+	
+}
+.sec{
+	
+	transform:translateY(-20px);
+}
+
+.contactus{
+	width: 100%;
+	height: 120vh;
+	padding: 80px 0;
+	position: relative;
+	
+}
+.contactus:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+	right:0;
+	z-index:-1;
+	background: linear-gradient(330deg, orange 55%,#fff 0%);
+	
+}
+.sbtn{
+	border: 1px solid orange;
+	background:transparent;
+	border-radius:100px;
+	margin: 0px 0px;
+	padding: 12px 35px;
+	outline: none;
+	color: orange;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+}
+form:hover .sbtn{
+	text-decoration: none;
+	background:  #fff;
+	color:orange;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	font-weight: bold;
+}
+::placeholder{
+	font-size:0.85rem;
+}
+.news{
+	width: 100%;
+	height: auto;
+	margin: 80px auto;
+	
+}
+.newss{
+	border-radius: 100px 0px 0px 100px!important;
+	min-width: 150px;
+	min-height: 40px;
+}
+.input-group-text{
+	color: #fff;
+	background: orange;
+	border-radius: 0px 100px 100px 0px;
+	min-width: 130px;
+	min-height: 40px;
+}
+.footers{
+	width: 100%;
+	height: auto;
+	padding: 30px 0 20px 0;
+	background-color: orange;
+	position: relative;
+    z-index: -1;
+}
+.footers p{
+	color: white;
+	
+}
+
+.navbar .navbar-nav a.nav-link {
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	color: #fff;
+	transition: all 0.5s;
+}
+.tbtn{
+	border: 1px solid orange;
+	background:#fff;
+	border-radius:100px;
+	margin: 0px 0px;
+	padding: 12px 35px;
+	outline: none;
+	color: orangered;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+}
+.tbtn:hover{
+	text-decoration: none;
+	background:orangered  ;
+	color:#fff;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	font-weight: bold;
+}
+
+.video-container {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
